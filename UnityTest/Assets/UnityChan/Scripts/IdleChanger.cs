@@ -79,6 +79,7 @@ public class IdleChanger : MonoBehaviour
 				anim.SetBool ("Next", true);
 			if(GUI.Button(new Rect(Screen.width - 100 , 70 ,80, 20), "Back"))
 				anim.SetBool ("Back", true);
+				// 추가애니메이션
             if (GUI.Button(new Rect(Screen.width - 100, 100, 80, 20), "Wait"))
                 anim.SetInteger("Status", 0);
             if (GUI.Button(new Rect(Screen.width - 100, 130, 80, 20), "Work"))
