@@ -5,8 +5,13 @@ using UnityEngine;
 public class Item
 {
     string strName;
-    string strCommnet;
+    string strComment;
     string strImage;
+
+    public string Name{ get { return strName; } }
+    public string Comment { get { return strComment; } }
+    public string Image { get { return strImage; } }
+
     public Item(string name, string comment, string img)
     {
         Set(name, comment, img);
@@ -14,7 +19,7 @@ public class Item
     public void Set(string name, string comment, string img)
     {
         strName = name;
-        strCommnet = comment;
+        strComment = comment;
         strImage = img;
     }
 }
@@ -24,7 +29,7 @@ public class ItemManager : MonoBehaviour {
     List<Item> m_listItems = new List<Item>();
 	// Use this for initialization
 	void Start () {
-		
+        Init();
 	}
 	
 	// Update is called once per frame
@@ -35,6 +40,10 @@ public class ItemManager : MonoBehaviour {
     public void Init()
     {
         m_listItems.Add(new Item("열쇠조각1", "다른 열쇠조각이 필요할거같다.", "key1"));
+        m_listItems.Add(new Item("열쇠조각2", "다른 열쇠조각이 필요할거같다.", "key2"));
+        m_listItems.Add(new Item("열쇠조각3", "다른 열쇠조각이 필요할거같다.", "key3"));
+        m_listItems.Add(new Item("열쇠조각4", "다른 열쇠조각이 필요할거같다.", "key4"));
+        m_listItems.Add(new Item("열쇠", "문을 열수있을거같다", "key"));
     }
 
     public void LoadItemInfo()
@@ -48,5 +57,12 @@ public class ItemManager : MonoBehaviour {
         return m_listItems[(int)item];
     }
 
-   
+    private void OnGUI() //간단한 디버깅용도로 레거시GUI사용하기
+    {
+        for(int i = 0; i<m_listItems.Count; i++)
+        {
+            GUI.Box(new Rect(Screen.width - 100,  20 * i, 100, 20), m_listItems[i].Name);
+            //Debug.Log(m_listItems[i].Name);
+        }
+    }
 }

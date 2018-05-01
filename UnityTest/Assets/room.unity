@@ -1363,6 +1363,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693787370}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &747795079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 747795081}
+  - component: {fileID: 747795080}
+  m_Layer: 0
+  m_Name: ItemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &747795080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747795079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbb942b1d8f32049a35f59b07e04913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &747795081
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747795079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1358318, y: 1.1481781, z: -3.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &814523644
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,6 +3817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062881666}
   - component: {fileID: 2062881669}
+  - component: {fileID: 2062881668}
   - component: {fileID: 2062881667}
   m_Layer: 0
   m_Name: closet
@@ -3812,6 +3853,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000004, y: 1, z: 1.0000002}
   m_Center: {x: -0.00000023841858, y: 0, z: 0}
+--- !u!114 &2062881668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062881665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b84032542bd7ec47bb093518656e3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_eItem: 2
+  m_cOpenDoor: {fileID: 1357223632}
 --- !u!33 &2062881669
 MeshFilter:
   m_ObjectHideFlags: 0
