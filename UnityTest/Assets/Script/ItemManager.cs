@@ -39,7 +39,8 @@ public class ItemManager : MonoBehaviour {
 
     public void LoadItemInfo()
     {
-        //Resources/cvs/item.cvs를 읽어서 아이템을 자동으로 설정하도록만드세요!
+        //Resources/Data/item.csv를 읽어서,
+        //아이템을 자동으로 설정하도록만드세요!
     }
 
     public Item GetItem(eItem item)

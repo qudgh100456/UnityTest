@@ -2125,9 +2125,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1218138225}
   - component: {fileID: 1218138224}
-  - component: {fileID: 1218138223}
   - component: {fileID: 1218138222}
   - component: {fileID: 1218138226}
+  - component: {fileID: 1218138223}
   - component: {fileID: 1218138227}
   m_Layer: 0
   m_Name: Player
@@ -3712,6 +3712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980652606}
   - component: {fileID: 1980652608}
+  - component: {fileID: 1980652609}
   - component: {fileID: 1980652607}
   m_Layer: 0
   m_Name: desk
@@ -3742,7 +3743,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1980652605}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3755,6 +3756,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1980652605}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1980652609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980652605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246e2a5a6502fe7409971db6710185f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2062881665
 GameObject:
   m_ObjectHideFlags: 0
