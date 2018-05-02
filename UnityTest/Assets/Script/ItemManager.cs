@@ -25,7 +25,7 @@ public class Item
 }
 
 public class ItemManager : MonoBehaviour {
-    public enum eItem { KEY_PIACE01, KEY_PIACE02, KEY_PIACE03, KEY_PIACE04, KEY }
+    public enum eItem { NONE = -1,KEY_PIACE01, KEY_PIACE02, KEY_PIACE03, KEY_PIACE04, KEY }
     List<Item> m_listItems = new List<Item>();
 	// Use this for initialization
 	void Start () {

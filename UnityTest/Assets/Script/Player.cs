@@ -15,8 +15,17 @@ public class Player : MonoBehaviour {
         m_listIventory.Remove(item);
     }
 
-	// Use this for initialization
-	void Start () {
+    private void OnGUI()
+    {
+        for (int i = 0; i < m_listIventory.Count; i++)
+        {
+            GUI.Box(new Rect(0, 20 * i, 100, 20), ""+m_listIventory[i]);
+            //Debug.Log(m_listItems[i].Name);
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
